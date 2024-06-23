@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+
+    <LinearLayout
+        android:id="@+id/firstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222222"
+        android:orientation="vertical">
+        <!--  header  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                app:cardCornerRadius="50sp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#1DB954"
+                app:cardCornerRadius="50sp"
+                app:cardElevation="20sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="All"
+                    android:textColor="@color/black" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#323232"
+                app:cardCornerRadius="50sp"
+                app:cardElevation="20sp">
+
+                <TextView
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Music"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#FF323232"
+                app:cardCornerRadius="50sp"
+                app:cardElevation="20sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Podcasts"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--  playlists  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+            <!-- 1 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/damn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="122dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="DAMN."
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 2 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rodeo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="50sp"
+                        android:text="Rodeo"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+            <!-- 3 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hero" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="HEROES &amp; VILLAINS"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 4 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blond" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="50sp"
+                        android:text="Blonde"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+            <!-- 5 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/utopia" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="UTOPIA"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 6 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/yeat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="50sp"
+                        android:text="2093"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+            <!-- 7 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sos" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="SOS"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 8 -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FF323232"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ctrl" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="50sp"
+                        android:text="Ctrl"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Suggested albums for you"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--    Suggested Albums    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/themed" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:text="The Melodic Blue"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/astroworld" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:text="ASTROWORLD"
+                    android:textColor="@color/white"
+                    android:textStyle="" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
